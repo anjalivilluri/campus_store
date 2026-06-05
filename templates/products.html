@@ -1,0 +1,88 @@
+<div class="row">
+
+{% for product in products %}
+
+<div class="col-md-4 mb-4">
+
+<div class="card shadow-lg h-100">
+
+{% if product[5] %}
+
+<img
+src="{{ url_for('static', filename='images/' + product[5]) }}"
+class="card-img-top"
+style="height:250px;object-fit:cover;">
+
+{% else %}
+
+<img
+src="{{ url_for('static', filename='images/default.jpg') }}"
+class="card-img-top"
+style="height:250px;object-fit:cover;">
+
+{% endif %}
+
+<div class="card-body">
+<form method="GET" action="/products">
+
+<div class="input-group mb-4">
+
+<input
+type="text"
+name="search"
+class="form-control"
+placeholder="Search Products">
+
+<button
+class="btn btn-primary">
+
+Search
+
+</button>
+
+</div>
+
+</form>
+
+<h5>{{ product[1] }}</h5>
+
+<p>{{ product[3] }}</p>
+
+<p>
+<b>Category:</b>
+{{ product[4] }}
+</p>
+
+<p>
+<b>Price:</b>
+₹{{ product[2] }}
+</p>
+
+<p>
+<b>Stock:</b>
+{{ product[6] }}
+</p>
+
+<a
+href="/add_to_cart/{{ product[0] }}"
+class="btn btn-success">
+
+Add To Cart
+
+</a>
+<a
+href="/delete_product/{{ product[0] }}"
+class="btn btn-danger mt-2">
+
+Delete
+
+</a>
+</div>
+
+</div>
+
+</div>
+
+{% endfor %}
+
+</div>

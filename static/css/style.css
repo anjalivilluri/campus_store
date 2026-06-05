@@ -1,0 +1,267 @@
+/* ==========================
+   GLOBAL
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#f8fafc;
+    color:#1e293b;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+    background:#0f172a !important;
+    box-shadow:0 2px 15px rgba(0,0,0,.1);
+}
+
+.navbar-brand{
+    font-size:1.6rem;
+    font-weight:bold;
+}
+
+.nav-link{
+    color:white !important;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#3b82f6 !important;
+    transform:translateY(-2px);
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero{
+    height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    background:
+    linear-gradient(
+    rgba(15,23,42,.85),
+    rgba(15,23,42,.85)),
+    url('../images/banner.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+}
+
+.hero h1{
+    font-size:4rem;
+    animation:slideDown 1s ease;
+}
+
+.hero p{
+    font-size:1.3rem;
+}
+
+.hero .btn{
+    margin-top:20px;
+}
+
+/* ==========================
+   CARDS
+========================== */
+
+.card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.15);
+}
+
+.card img{
+    height:250px;
+    object-fit:cover;
+}
+
+.card-title{
+    font-weight:700;
+}
+
+.card-body{
+    background:white;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.btn-primary{
+    background:#3b82f6;
+    border:none;
+}
+
+.btn-success{
+    background:#10b981;
+    border:none;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* ==========================
+   TABLE
+========================== */
+
+.table{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.08);
+}
+
+/* ==========================
+   FORMS
+========================== */
+
+.form-control{
+    border-radius:10px;
+    padding:12px;
+}
+
+.form-control:focus{
+    box-shadow:
+    0 0 10px rgba(59,130,246,.4);
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    background:#0f172a;
+    color:white;
+    margin-top:60px;
+}
+
+/* ==========================
+   ANIMATIONS
+========================== */
+
+@keyframes slideDown{
+
+    from{
+        opacity:0;
+        transform:translateY(-50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.fade-in{
+
+    animation:
+    fadeIn 1s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+.card{
+    transition:.4s;
+}
+
+.card:hover{
+    transform:
+    translateY(-12px)
+    scale(1.02);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.2);
+}
+
+.btn{
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+.card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+.btn{
+    border-radius:50px;
+}
+
+.hero{
+    height:500px;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.6),
+    rgba(0,0,0,.6)),
+    url('../images/book.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:bold;
+}
+
+.hero p{
+    font-size:22px;
+}
