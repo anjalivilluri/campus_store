@@ -1,0 +1,44 @@
+# Virtual Environment
+venv/
+env/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+
+# VS Code Settings
+.vscode/
+
+# Environment Variables
+.env
+
+# Database Files
+*.db
+*.sqlite3
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Build Files
+dist/
+build/
+
+# Pytest Cache
+.pytest_cache/
+
+# Mac/Linux Hidden Files
+*.swp
+
+# Uploaded Images Cache
+uploads/
+
+# Temporary Files
+temp/
+
+# Render/Vercel Cache
+.vercel/
